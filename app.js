@@ -10,9 +10,9 @@ admin = name;
 alert(admin);
 
 // Task 2
-let planetName;
-let currentUser;
+const PlANET_NAME = 'Earth';
+const CURRENT_USER = 'John';
  
 // Task 3
-let number = '10' + 10;
+const number = '10' + 10;
 console.log(typeof number);
