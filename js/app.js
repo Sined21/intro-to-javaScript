@@ -1,7 +1,7 @@
 'use strict';
 
 // Task #1 
-let user = {};
+const user = {};
 
 user.name = 'John';
 user.surname = 'Smith';
@@ -12,7 +12,7 @@ delete user.name;
 // Yes, can be changed
 
 // Task #3
-let salaries = {
+const salaries = {
     John: 100,
     Ann: 160,
     Pete: 130
