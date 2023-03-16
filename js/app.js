@@ -1,12 +1,31 @@
 'use strict';
-//1
-let num = 1;
+// Task 1
+let numOrStr = prompt('input number or string');
+console.log(numOrStr)
 
-//2
-num += 12;
+if (numOrStr === null || numOrStr.trim() === '' || isNaN( +numOrStr )) {
+    console.log('Bad value');
+} else {
+    console.log('OK!');
+}
 
-//3
-num -= 14;
+// Task 2
+let numOrStr = prompt('input number or string');
+console.log(numOrStr);
 
-//4
-num *= 5;
+switch (Boolean(numOrStr)) {
+    case null:
+        console.log('вы отменили');
+        break;
+        
+    case numOrStr?.trim() === '':
+        console.log('Empty String');
+        break;
+        
+    case isNaN(+numOrStr):
+        console.log(' number is Ba_NaN');
+        break;
+        
+    default: 
+        console.log('OK!');
+}
