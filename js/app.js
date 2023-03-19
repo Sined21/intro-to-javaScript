@@ -1,5 +1,5 @@
 'use strict';
-const number = +prompt('Enter the number');
+const number = prompt('Enter the number');
 
 if (isNaN(+number) || number === null) {
     alert('Entered invalid value');
