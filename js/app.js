@@ -1,7 +1,7 @@
 'use strict';
 const number = prompt('Enter the number');
 
-if (isNaN(+number) || number === null) {
+if (isNaN(+number) || number === null || number.trim() === '') {
     alert('Entered invalid value');
 } else {
     let label;
