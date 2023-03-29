@@ -1,13 +1,8 @@
 'use strict';
-const calcProducts = (litersCount) => {
-    if (typeof litersCount !== 'number' || !isFinite(litersCount)) return 'invalid value';
-    
-    const COUNT = 4;
-    const WEIGHT = 0.75;
-    const PRICE = 13;
-    const totalSum = Math.ceil(litersCount * COUNT * WEIGHT * PRICE);
-    
-    return `Итого: ${totalSum}грн за ${litersCount}кг`;
+const calcProducts = (liters, count, weight, price) => {
+    const totalWeight = Math.ceil(liters * count * weight  / 1000);
+    const totalPrice = totalWeight * price;
+    return `Итого: ${totalPrice}грн для ${liters} литров борща`;
 }
 
-console.log(calcProducts(2));
+console.log(calcProducts(48, 4, 75, 13));
