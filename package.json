@@ -1,0 +1,30 @@
+{
+  "name": "training-project",
+  "version": "1.0.0",
+  "description": "npm study",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sined21/intro-to-javaScript.git"
+  },
+  "keywords": [
+    "training-project"
+  ],
+  "author": "Denys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sined21/intro-to-javaScript/issues"
+  },
+  "homepage": "https://github.com/Sined21/intro-to-javaScript#readme",
+  "dependencies": {
+    "ladash": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "prettier": "^2.8.7"
+  }
+}
