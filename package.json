@@ -19,9 +19,6 @@
     "url": "https://github.com/Sined21/intro-to-javaScript/issues"
   },
   "homepage": "https://github.com/Sined21/intro-to-javaScript#readme",
-  "dependencies": {
-    "ladash": "^1.2.0"
-  },
   "devDependencies": {
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
