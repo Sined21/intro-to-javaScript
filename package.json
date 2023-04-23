@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Sined21/intro-to-javaScript#readme",
   "dependencies": {
-    "ladash": "^1.2.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^8.38.0",
