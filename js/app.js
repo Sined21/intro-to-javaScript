@@ -57,7 +57,9 @@ let users = [
   },
 ];
 
-const filteredUsers = users.filter(user => user.balance.replace(/[\s,$]/g, '') > 2000);
+const filteredUsers = users
+  .filter((user) => user.balance.replace(/[\s,$]/g, '') > 2000)
+  .map((user) => user.phone);
 
 const balanceOfUsers = users
   .reduce((sum, user) => {
