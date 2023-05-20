@@ -1,15 +1,21 @@
 'use strict';
 
-(function () {
+(function() {
   const form = document.getElementById('form');
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    const formData = new FormData(form);
-    const formValues = Object.fromEntries(formData.entries());
+    const formData = {};
 
-    form.reset();
-    console.log(formValues);
+    for (let field of form) {
+      if (field.name) {
+        const { name, type, checked, value } = field;
+
+        formData[name] = type === 'checkbox' ? checked : value;
+      }
+    }
+
+    console.log(formData);
   });
 })();
