@@ -20,13 +20,15 @@ void (function () {
   };
 
   const deepFreeze = (obj) => {
-    for (let key in obj) {
-      Object.freeze(obj);
+    Object.freeze(obj);
 
-      if (typeof obj[key] === 'object') {
+    for (let key in obj) {
+      if ((typeof obj[key] === 'object' || typeof obj[key] === 'function') && !Object.isFrozen(obj[key])) {
         deepFreeze(obj[key]);
       }
     }
+
+    return obj;
   };
 
   deepFreeze(user);
