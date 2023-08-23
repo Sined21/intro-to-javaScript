@@ -1,27 +1,31 @@
 {
-  "name": "training-project",
-  "version": "1.0.0",
-  "description": "front-end-pro",
-  "main": "js/app.js",
+  "name": "intro-to-javascript",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
   "scripts": {
-    "test": "npm run dev"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sined21/intro-to-javaScript.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
   },
-  "keywords": [
-    "training-project"
-  ],
-  "author": "Denys",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sined21/intro-to-javaScript/issues"
-  },
-  "homepage": "https://github.com/Sined21/intro-to-javaScript#readme",
-  "devDependencies": {
-    "eslint": "^8.38.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "prettier": "^2.8.7"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
