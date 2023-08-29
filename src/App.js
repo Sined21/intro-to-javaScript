@@ -1,10 +1,10 @@
-import Progress from './components/Progress';
-import "bootstrap/dist/css/bootstrap.css";
+import 'bootstrap/dist/css/bootstrap.css';
+import Alert from './components/Alert';
 
 function App() {
   return (
-    <div className="App">
-      <Progress percentage={40} />
+    <div className='App'>
+      <Alert type='warning' text='what is love?' />
     </div>
   );
 }
