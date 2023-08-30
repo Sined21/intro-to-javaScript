@@ -1,10 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import Alert from './components/Alert';
+import ListGroup from './components/ListGroup';
 
 function App() {
   return (
     <div className='App'>
-      <Alert type='warning' text='what is love?' />
+      <ListGroup>
+        <p>one</p>
+        <p>two</p>
+      </ListGroup>
     </div>
   );
 }
