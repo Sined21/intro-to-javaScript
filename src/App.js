@@ -1,13 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import ListGroup from './components/ListGroup';
+import BtnGroup from './components/BtnGroup';
 
 function App() {
   return (
     <div className='App'>
-      <ListGroup>
-        <p>one</p>
-        <p>two</p>
-      </ListGroup>
+      <BtnGroup />
     </div>
   );
 }
