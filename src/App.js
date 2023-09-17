@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import BtnGroup from './components/BtnGroup';
+import Components from './components/Components';
 
 function App() {
   return (
     <div className='App'>
-      <BtnGroup />
+      <Components/>
     </div>
   );
 }
