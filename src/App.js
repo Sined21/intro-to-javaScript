@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import BtnGroup from './components/BtnGroup';
+import TodoBox from './components/TodoBox';
 
 function App() {
   return (
     <div className='App'>
-      <BtnGroup />
+      <TodoBox/>
     </div>
   );
 }
